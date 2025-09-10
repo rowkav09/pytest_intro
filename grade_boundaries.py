@@ -9,7 +9,7 @@ default_boundaries = {
 0: 'U'
 }
 
-def calc_grade(score: int, boundaries: dict[int, str]):
+def calc_grade(score: int, boundaries: dict[int, str]) -> str:
 
     if type(score) is not int:
         raise TypeError('score must be an integer')
@@ -27,7 +27,8 @@ def calc_grade(score: int, boundaries: dict[int, str]):
 
     for b in ordered_scores:
         if score >= b:
-            grade = boundaries[b]
+            if boundaries[b] != 'Max':
+                grade = boundaries[b]
 
     return grade
 
