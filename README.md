@@ -41,5 +41,5 @@ It was provided as part of my computing lessons and includes both:
 ## Notes
 
 - This repo is for **homework purposes only**.  
-- It uses **bPython**.  
+- It uses **Python**.  
 - The tests check correct outputs and error handling.  
